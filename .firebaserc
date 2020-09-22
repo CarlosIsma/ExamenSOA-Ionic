@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "loginionic-5e0a2": {
+      "hosting": {
+        "app": [
+          "loginionic-5e0a2"
+        ]
+      }
+    }
+  }
+}

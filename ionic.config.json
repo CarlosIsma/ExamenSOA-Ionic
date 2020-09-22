@@ -1,0 +1,7 @@
+{
+  "name": "AppSOA",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inicio de Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div align="center" >
+    <img class="icon" src="assets/login.png" alt="" height="300">
+  </div>
+  
+  <form autocomplete="off">
+    <ion-item>
+      <ion-label position="stacked">Correo Electrónico<span class="text-danger">*</span></ion-label>
+      <ion-input type="text" name="email" required="true"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Contraseña<span class="text-danger">*</span></ion-label>
+      <ion-input type="password" name="password" required="true"></ion-input>
+    </ion-item>
+    <ion-button color="tertiary" class="ion-margin-top" type="submit" expand="block">Entrar</ion-button>
+  </form>
+  <div class="ion-text-center ion-margin-top" >
+    <a routerLink="/registro"><small>Olvidé mi Contraseña</small></a>
+  </div>
+
+  <ion-grid>
+    <ion-button (click)="loginFace()" class="ion-margin-top" type="submit" expand="block" color="primary">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </ion-button>
+  </ion-grid>
+</ion-content>

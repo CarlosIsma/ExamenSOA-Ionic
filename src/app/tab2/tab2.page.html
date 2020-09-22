@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Lista de Libros </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>Libros</ion-card-subtitle>
+    <ion-card-title>Ciencia</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    Selecciona tu mejor Libro
+  </ion-card-content>
+</ion-card>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let p of libros" [routerLink]="['/tabs/tab2/detalle',p.id]">
+      <ion-thumbnail slot="start">
+        <img
+          src="https://cideps.com/wp-content/uploads/2018/12/libros.png" />
+      </ion-thumbnail>
+      <ul class="list">
+        <ion-label>Título: {{ p.titulo}}</ion-label>
+        <ion-label>Género: {{ p.genero}}</ion-label>
+        <ion-label>Año: {{ p.anio}}</ion-label>
+        <ion-label>Libreria: {{ p.libreria_id}}</ion-label>
+      </ul>
+    </ion-item>
+  </ion-list>
+</ion-content>
